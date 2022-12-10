@@ -1,6 +1,6 @@
 from animal import Animal
 from mascota import Mascota
-class Cocodrilo(Animal,Mascota):
+class Cocodrilo(Animal):
     pass
 
     def tamnio(self):

@@ -1,5 +1,9 @@
-class Automovil:
-    def __init__(self,nombre,velocidad_max,kilometraje,capacidad):
+
+class Vehiculo:
+    """Crear la estructura de un vehiculo
+Contine métodos de como: en_marcha,
+"""
+    def __init__(self,nombre:str,velocidad_max:float,kilometraje:float,capacidad:int):
         self.__nombre = nombre
         self.velocidad_max = velocidad_max
         self.kilometraje = kilometraje

@@ -1,8 +1,8 @@
-from automovil import Automovil
+from automovil import Vehiculo
 from autobus import Autobus
 
 def main():
-    a1 = Automovil("vw",100,10000,4)
+    a1 = Vehiculo("vw",100,10000,4)
     # a2 = Automovil("ford",200,5000)
     # a3 = Automovil("toyota",150,10000)
     b1 = Autobus("Escolar Volvo", 80, 10000, 50)

@@ -1,5 +1,5 @@
 # definir una clase con la palabra reservada class
-class Galleta():
+class Galleta:
     #contructor o instanciador
     # def __init__(self,nombre,sabor,color,gramos): <- atributos obligatorios
     def __init__(self,nombre,sabor="Chocolate",color="Cafe",gramos=5.0): # gramos no es obligatorio
@@ -21,7 +21,7 @@ class Galleta():
         if self.gramos<0:
             print(f"No hay galleta")
         else:
-            print(f"Hay {self.gramos}g de galleta")
+            print(f"Hay {self.gramos}g de galleta {self.nombre}")
 
     # imprimir objeto aplicando un print()
     def __str__(self):

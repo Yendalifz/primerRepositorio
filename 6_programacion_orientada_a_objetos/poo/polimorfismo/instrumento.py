@@ -1,4 +1,5 @@
 class Instrumento:
+    
     def __init__(self,tipo,marca,clasificacion):
         self.tipo = tipo
         self.marca = marca
