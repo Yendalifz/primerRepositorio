@@ -52,7 +52,7 @@ AHORCADO = ['''
                       |
                 =========''']
 
-def vidas(vidas):
+def vidas(vidas):   #AL AGRGEAR LAS VIDAS AQUI YA NO SE MENCIPNAN EN EL CODIGO DE main.py
       return AHORCADO[len(AHORCADO)-vidas-1]
 
 def main():

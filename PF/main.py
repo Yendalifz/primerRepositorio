@@ -1,6 +1,6 @@
 #Se crea la estructura principal del programa, y la lógica de programación del juego. Importando los archivos.
 import random
-import Palabras
+import Palabras   #DUDA AL MOMENTO DE IMPORTAR Palabras.py y dibujo.py
 Palabras.lista_palabras
 from dibujo import AHORCADO
 
@@ -37,6 +37,6 @@ def juego_ahorcado(elegir_palabra): #Palabra seleccionada al azar
     print(AHORCADO[vidas]) #Se imprime el dibujo del muñeco, cada que mencionas letras incorrecta.
 
 if __name__ == " __main__":
-    elegir_palabra = random.choice(lista_palabras)
-    print(f"Es un {len(elegir_palabra)}-letras palabra.")
+    elegir_palabra = random.choice(lista_palabras)   #PORQUE NO RECONOCE LISTA_PALABRAS Y NO SE EJECUTA EL CODGIGO
+    print(f"Es un {len(elegir_palabra)}-letras palabra.")   
     juego_ahorcado(elegir_palabra)
