@@ -33,8 +33,8 @@ def obtenerPalabraAlAzar(listaDePalabras:list)->str:
     return listaDePalabras[indiceDePalabras]
 #y la lista de letras erróneas para informar al usuario de qué letras han sido utilizadas ya y favorecer que no las repita. 
 def mostrarTablero(letrasIncorrectas:list, letrasCorrectas:list, palabraSecreta:list)->str:
-  """La variable tablero es una lista ordenada que muestra las líneas de cada letra por adivinar,
-  las acertadas y las erroneas.
+    """La variable tablero es una lista ordenada que muestra las líneas de cada letra por adivinar,
+    las acertadas y las erroneas.
 
     Args:
         letrasIncorrectas (list): una lista de palabras contiene todas las letras que ha dicho el jugador. Cuenta los errores, y no se suman las letras repetidas.
@@ -54,11 +54,11 @@ def mostrarTablero(letrasIncorrectas:list, letrasCorrectas:list, palabraSecreta:
     for i in range(len(palabraSecreta)): #Encuentran las letras en los espacios vacíos.
         if palabraSecreta[i] in letrasCorrectas:
             espaciosVacíos = espaciosVacíos[:i] + palabraSecreta[i] + espaciosVacíos[i+1:]
- 
+
     for letra in espaciosVacíos: #Se observa la palabra adivinar con espacios entre cada letra.
         print(letra, end=' ')
     print()
- 
+
 def obtenerIntento(letrasProbadas)->str:
     """Necesitamos realizar un bucle para obtener la letra del usuario, 
     para solicitársela una y otra vez hasta que introduce una válida.
@@ -91,7 +91,7 @@ def jugarDeNuevo()->str:
     """
     print('¿Quieres jugar de nuevo? (sí o no)')
     return input().lower().startswith('s')
- 
+
 def inicio()->str:
     """Inicia el juego, el usuario introduce una letra.
 
