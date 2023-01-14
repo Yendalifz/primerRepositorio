@@ -52,12 +52,20 @@ AHORCADO = ['''
                       |
                 =========''']
 
-def vidas(vidas):   #AL AGRGEAR LAS VIDAS AQUI YA NO SE MENCIPNAN EN EL CODIGO DE main.py
-      return AHORCADO[len(AHORCADO)-vidas-1]
+def vidas(vidas:int)->str:   #AL AGRGEAR LAS VIDAS AQUI YA NO SE MENCIPNAN EN EL CODIGO DE main.py
+      """Retorna el dibujo del ahorcado segun el número de vidas
 
-def main():
-    for i in range(len(AHORCADO)):
-        print(AHORCADO[i])
-        input()
-if __name__ == "__main__":
-    main()
+      Args:
+          vidas (int): número de vidas
+
+      Returns:
+          str: '''
+                  +---+
+                  |   |
+                  O   |
+                 /|   |
+                      |
+                      |
+                ========='''
+      """
+      return AHORCADO[len(AHORCADO)-vidas-1]
